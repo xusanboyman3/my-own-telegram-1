@@ -1,5 +1,8 @@
 from telethon import TelegramClient, events
 import asyncio
+from keep_alive import keep_alive  # Import the keep_alive function
+
+keep_alive()
 # Use your own values from my.telegram.org
 api_id = 23564987
 api_hash = 'a3a5bf88d985dbf6b39ecb8a8283b33b'
@@ -18,6 +21,7 @@ async def main():
 
 if __name__ == '__main__':
     print("Client Created")
+    keep_alive()
     try:
         loop = asyncio.get_event_loop()
         loop.run_until_complete(main())
