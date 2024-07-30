@@ -1,5 +1,4 @@
+venv/
 .idea
-./session_name.session
-.gitignore
-.venv
-./venv
+gitignore/
+session_name.session/
