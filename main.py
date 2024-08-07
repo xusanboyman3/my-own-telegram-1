@@ -17,6 +17,7 @@
 from telethon import TelegramClient, events, Button
 from telethon.sessions import StringSession
 from datetime import datetime
+from keep_alive import keep_alive
 
 
 # api_id = 23564987
@@ -62,5 +63,6 @@ async def handler(event):
 
 
 with client:
+    keep_alive()
     print("Client is running...")
     client.run_until_disconnected()
