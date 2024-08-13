@@ -1,3 +1,5 @@
+SpeechRecognition
 telethon
 asyncio
 flask
+pydub
